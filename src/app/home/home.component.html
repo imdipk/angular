@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="home-container">
+    <div class="display">
+        <div class="MensClothing">
+            <div class="top">
+                <h4>Men's Clothing</h4>
+
+                <div class="cards container" *ngFor="let e of lis;">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{e['image']}}" class="card-img-top" alt="...">
+                        <h3>{{e['title']}}</h3>
+                        <div class="card-body">
+                          <p class="card-text">{{e['price']}}</p>
+                        </div>
+                        <button class="btn btn-primary" (click)="addToCart()">add to cart </button>
+                      </div>
+                </div>
+                
+               
+                <div class="view-all">View All</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
